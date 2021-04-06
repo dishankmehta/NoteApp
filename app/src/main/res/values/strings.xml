@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NoteApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="name">Name</string>
+    <string name="title">Title</string>
+    <string name="save">Save</string>
+
+
+    <string name="navigation_view_host">NavigationFragmentView</string>
+
+    <!-- Menu Strings -->
+    <string name="change_theme">Change Theme</string>
+    <string name="save_button_desc">Save Button</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

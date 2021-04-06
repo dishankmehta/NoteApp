@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NoteFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bottom_line"
+            android:ems="10"
+            android:autofillHints="@string/title"
+            android:hint="@string/title"
+            android:inputType="textPersonName"
+            android:paddingLeft="@dimen/standard_text_padding"
+            android:paddingRight="@dimen/standard_text_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:paddingStart="@dimen/standard_text_padding"
+            android:paddingEnd="@dimen/standard_text_padding"/>
+
+        <!--    <Button-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+        <!--        android:layout_weight="2"-->
+        <!--        android:text="@string/save"-->
+        <!--        android:id="@+id/saveButton"-->
+        <!--        />-->
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/save_button_margin"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_save_black_24"
+            android:id="@+id/saveButton"
+            android:contentDescription="@string/save_button_desc"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/save_button_margin" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/noteContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:autofillHints="@string/name"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="top|start"
+        android:hint="@string/name"
+        android:inputType="textMultiLine"
+        android:paddingStart="@dimen/standard_text_padding"
+        android:paddingLeft="@dimen/standard_text_padding"
+        android:paddingEnd="@dimen/standard_text_padding"
+        android:paddingRight="@dimen/standard_text_padding"
+        android:paddingTop="@dimen/standard_text_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>
